@@ -1,0 +1,408 @@
+.textVideo{
+    height: 100vh;
+    width: 100%;
+}
+.homePageDiv{
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+.starryNightBg{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* z-index: 10; */
+    /* position: absolute; */
+}
+.starryNightBgT{
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+}
+.starryNightBgB{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    background-attachment: fixed;
+}
+.momentumText{
+    height: 103vh;
+    width: 100vw;
+    /* background-color: black; */
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -101vh;
+    /* mix-blend-mode: multiply; */
+    font-size: 6rem;
+    font-weight: bolder;
+    letter-spacing: -1vh;
+    word-spacing: 2vh;
+}
+.fluid_bg{
+    height: 98vh;
+    width: 100vw;
+}
+.scrollDownWrapper{
+    height: 10vh;
+    width: 10vh;
+    background-image: linear-gradient(grey,rgb(25, 24, 24));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.scrollDown{
+    height: 6vh;
+    width: 6vh;
+    background-color: black;
+    border-radius: 50%;
+}
+.hpScrollDownComp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 12vw;
+    margin-top: 81vh;
+    margin-left: 83vw;
+}
+.text {
+    z-index: 1;
+    position: absolute;
+    margin-top: -35vh;
+    margin-left: -0.5vw;
+    color: #fff;
+}
+.text span{
+    position: absolute;
+    transform-origin: 0 130px;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+.spinnerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50vh;
+    position: absolute;
+    margin-left: 50vw;
+}
+.spinnerContainer .spinnerBox{
+    transform-style: preserve-3d;
+    animation: animate 25s linear infinite alternate;
+}
+@keyframes animate {
+    0%{
+        transform: perspective(400px) rotateX(0deg) rotate(20deg);
+    }
+    100%{
+        transform: perspective(600px) rotateX(360deg) rotate(20deg);
+    }
+}
+.scrollButton{
+    height: 12vh;
+    width: 4vw;
+    background-color: transparent;
+    margin-left: 48vw;
+    margin-top: -30vh;
+    position: absolute;
+    border-radius: 4vh;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    height: 4vh;
+}
+.lineDiv{
+    width: 4px;
+    border-radius: 2rem;
+    background-color: #fff;
+    animation: scrollDownAnimation 2.5s infinite ease-in-out;
+}
+@keyframes scrollDownAnimation {
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 6vh;
+    }
+}
+.shootingStarWrapper{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 40vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation 5s infinite linear;
+    opacity: 0;
+}
+.shootingStar{
+    height: 0.5vh;
+    width: 0.5vh;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.shootingStarTail{
+    height: 1px;
+    width: 15vw;
+    background: linear-gradient(90deg,white,transparent);
+}
+@keyframes shootingStarAnimation {
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper1{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    margin-left: 70vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation1 5s infinite linear;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation1{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper2{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: 89vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation2 3s infinite linear;
+    animation-delay: 4.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation2{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper3{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+    margin-left: 19vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation3 2s infinite linear;
+    animation-delay: 6s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation3{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper4{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60vh;
+    margin-left: 60vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation4 6s infinite linear;
+    animation-delay: 6s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation4{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper5{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+    margin-left: 95vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation5 7s infinite linear;
+    animation-delay: 7.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation5{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper6{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation6 3s infinite linear;
+    animation-delay: 7.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation6{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper7{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 30vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation7 10s infinite linear;
+    animation-delay: 7.5s;
+    opacity: 1;
+}
+@keyframes shootingStarAnimation7{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper8{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 90vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation8 8s infinite linear;
+    animation-delay: 7.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation8{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}
+.shootingStarWrapper9{   
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35vh;
+    margin-left: 90vw;
+    transform: rotateZ(-20deg);
+    animation: shootingStarAnimation9 7s infinite linear;
+    animation-delay: 4.5s;
+    opacity: 0;
+}
+@keyframes shootingStarAnimation9{
+    0%{
+        transform: translateY(0px) translateX(0px) rotateZ(-20deg);
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(1000px) translateX(-3000px) rotateZ(-20deg);
+        opacity: 1;
+    }
+}

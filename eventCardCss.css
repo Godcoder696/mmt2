@@ -1,0 +1,40 @@
+.eventCard{
+    height: 140vh;
+    width: 47vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5vh;
+    overflow:hidden;
+    align-items: center;
+}
+.video1{
+    height: 100vh;
+    width: 100vw;
+    margin-left: -30vh;
+}
+.eventDescriptionHomepage{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-left: 5vw;
+}
+.smallHead{
+    margin-top: 5vh;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    letter-spacing: 1vh;
+}
+.mediumHead{
+    margin-top: -2vh;
+    font-size: 6rem;
+    letter-spacing: -1vh;
+    word-spacing: 1vh;
+    font-weight: bold;
+}
+.miniHead{
+    margin-top: -3vh;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}

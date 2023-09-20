@@ -1,0 +1,62 @@
+.aboutUs{
+    height: 65vh;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 10vh;
+    display: flex;
+    z-index: 30;
+}
+.poweredBy{
+    font-size: 2rem;
+    background: -webkit-linear-gradient(45deg,yellow, yellowgreen,rgb(3, 252, 3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 13vw;
+}
+.ncuHeading{
+    font-size: 6rem;
+    font-weight: bolder;
+    letter-spacing: -1vh;
+}
+.locationNcu{
+    font-size: 2rem;
+    letter-spacing: 0.7vw;
+    margin-top: -2.5vh;
+}
+.aboutUsWrapper{
+    margin-left: 4vw;
+}
+.ncuDescription{
+    height: 10vh;
+    width: 55vw;
+    margin-top: 2vh;
+    font-size: 1.5rem;
+}
+.ncuLogo{
+    height: 34vh;
+    margin-top: 7vh;
+    margin-left: 4vw;
+}
+.introVideo{
+    width: 100vw;
+    background-attachment: fixed;
+}
+.hidden{
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.starTwinkleWrapper{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red;   */
+    z-index: -10;
+    position: absolute;
+    margin-top: -110vh;
+}
